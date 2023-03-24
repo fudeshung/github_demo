@@ -9,5 +9,23 @@
 <body>
   
   <div>123</div>
+
+  <script>
+    function Fn(name, age,o) {
+      this.name = name,
+      this.age = age,
+      this.aigao = function (aigao) {
+        console.log(aigao);
+      }
+    }
+
+    const why = new Fn("why", 18)
+    console.log(why);
+
+    for (let k in why) {
+      console.log(k);
+      console.log(why[k]);
+    }
+  </script>
 </body>
 </html>
